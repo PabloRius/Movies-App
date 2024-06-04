@@ -1,18 +1,16 @@
-.MoviesList {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+.movies {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
-  li {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
 
+  list-style-type: none;
+
+  .movie {
+    text-align: center;
     img {
       border-radius: 20px;
     }
